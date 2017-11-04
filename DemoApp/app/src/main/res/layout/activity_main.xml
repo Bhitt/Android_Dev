@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,35 +11,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bhitt.demoapp.MainActivity">
 
-    <TextView
-        android:text="My Great App"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/textView4"
-        android:textSize="50sp"
-        android:textColor="@android:color/black"
-        android:background="@color/TextBackGround" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/small_jelly"
+        android:id="@+id/imageView" />
 
     <Button
-        android:text="Button"
+        android:text="Swap Picture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView4"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:id="@+id/button"
-        android:onClick="clickFunction" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/myTextField"
-        android:hint="Enter your name..."
-        android:layout_below="@+id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginBottom="27dp"
+        android:id="@+id/pic_swap"
+        android:onClick="swapPicture" />
 </RelativeLayout>
